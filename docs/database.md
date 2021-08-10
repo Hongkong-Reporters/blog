@@ -87,9 +87,10 @@ disk的分页机制，可以参考MySQL
 
 ```js
 db.list()					// 获取所有database
-db.table.list()				// 获取所有table
+db.create('demo', {})		// 创建database，第二个参数为config (定义编码等)
+db.tableList()				// 获取所有table
+db.createTable('demo', {})  // 创建table，第二个参数为config (定义编码等)
 db.use('test')				// 使用test数据库
-db.table.use('test')		// 使用test表
 ```
 
 
